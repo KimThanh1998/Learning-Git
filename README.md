@@ -14,3 +14,6 @@
 	git push -u origin master
 
 #2nd Issue: Conflict when updating same line
+--Root cause: When more than two people working on the same files, occasionally they change the same line with different contents.
+--Problem: CONFLICT (content): Merge conflict in xxx.xxx 
+Automatic merge failed; fix conflicts and then commit the result.
