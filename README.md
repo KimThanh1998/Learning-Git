@@ -17,3 +17,21 @@
 --Root cause: When more than two people working on the same files, occasionally they change the same line with different contents.
 --Problem: CONFLICT (content): Merge conflict in xxx.xxx 
 Automatic merge failed; fix conflicts and then commit the result.
+--Solve: 
+	git pull orgin master
+	sudo gedit xxx (file conflict -> fix conflict manually by choosing head or local, or reconstruct)
+	git add xxx
+	git commit 
+	git push
+	
+#3rd Issue: Working with branch
+--Procedure:
+	git checkout -b <name> (create and checkout new branch)
+	git add <file>
+	git commit
+	git push --new-upstream origin <branch>
+	
+#4th Issue: Merge with master branch
+--Procedure:
+	git checkout master (change code back to origin)
+	git merge <branch>
